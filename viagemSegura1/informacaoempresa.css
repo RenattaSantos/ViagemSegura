@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF6D8;
+  margin: 0;
+  padding: 20px;
+}
+
+.informacaoempresa {
+  background-color: #FDF2D5;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* Cabeçalho com logo e título */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px 0 20px;
+}
+
+.imagem {
+  width: 8%;
+    margin: 30px 0;
+    margin-right: 15%;
+    position: absolute;
+}
+
+.titulo {
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  margin-left: 50%;
+}
+
+/* Bloco com serviços e frota */
+.bloco-servico-frota {
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.tipo-servico {
+  flex: 2;
+}
+
+.titulo-interno {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.borda-servico {
+  border: 2px solid #444;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #F7F0F0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.frota-disponivel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.grupo-frota {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.grupo-frota input[type="number"] {
+  width: 50px;
+  padding: 4px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+
+/* Licenciamento */
+.licenciamento {
+  margin-top: 30px;
+}
+
+.texto-licenciamento {
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #F7F0F0;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Botões de documentos */
+.documentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.documentos button {
+  background-color: #F7F0F0;
+  border: 2px solid #444;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Autorização e Declarações */
+.autorizacoes {
+  margin-top: 30px;
+}
+
+.bloco-declaracao {
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #F7F0F0;
+  margin-top: 15px;
+}
+
+.bloco-declaracao p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.linha-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.linha-check input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.linha-check button {
+  background-color: #f2f2f2;
+  border: 2px solid #444;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Checkbox com texto */
+.linha-servico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Botões inferior da tela */
+.botoes {
+  display: flex;
+  justify-content: space-between;   /* Um botão de cada lado */
+  margin-top: 20px;
+}
+
+.btn {
+   width: 48%;                        /* Largura quase metade */
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;                  /* Mostra cursor de clique */
+  font-weight: bold;
+}
+
+.verde {
+  background-color: #8FD14F;
+}

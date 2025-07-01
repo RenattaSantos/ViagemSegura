@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login - Viagem Segura</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="telaprincipal">
+    <!-- Cabeçalho com imagem e título -->
+    <div class="cabecalho">
+      <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+      <p class="titulo">Acesso ao Sistema</p>
+    </div>
+
+    <!-- Formulário de login -->
+    <form>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+      <!-- Botões auxiliares -->
+      <div class="buttons1">
+        <button type="button" class="small1" onclick="window.location.href='redefinicaoSenha.html'">Esqueceu sua senha?</button>
+        <button type="button" class="small1" onclick="window.location.href='cadastrousuario.html'">Novo cadastro</button>
+      </div>
+
+      <!-- Botão principal -->
+      <button type="button" class="entrar" onclick="window.location.href='telafuncionario.html'">ENTRAR</button>
+    </form>
+  </div>
+
+</body>
+</html>

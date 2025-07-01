@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;     /* Fonte padrão */
+  background-color: #FFF6D8;          /* Cor de fundo clara */
+  margin: 0;                          /* Remove margens externas padrão */
+  padding: 20px;     
+}
+
+.tela-recuperarsenha {
+      background-color: #FDF2D5;          /* Cor de fundo da caixa */
+  max-width: 400px; /* substitui width fixa */                       /* Largura fixa */
+  margin: auto;                       /* Centraliza horizontalmente */
+  padding: 20px;                      /* Espaçamento interno */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor da caixa */
+border-radius: 20px;
+}
+
+.cabecalho {
+   display: flex;                      /* Alinha elementos lado a lado */
+  align-items: center;               /* Alinha verticalmente */
+  justify-content: center;           /* Centraliza na horizontal */
+  gap: 20px;                          /* Espaço entre logo e título */
+  margin-top: 50px;                  
+  margin-bottom: 50px;
+}
+
+  .imagem {
+        width: 8%;
+    margin: 30px 0;
+    margin-right: 11%;
+    position: absolute;
+  }
+  
+  
+  .titulo {
+     text-decoration: underline;
+    color: black;
+    font-size: 17px;
+    margin-left: 50%;
+    font-weight: bold; 
+  }
+
+.texto {
+  margin: 30px 0 20px;
+  
+}
+
+.texto p {
+  font-size: 14px;
+  margin: 0;
+}
+
+label {
+   display: block;                    /* Ocupa linha inteira */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;                       /* Ocupa toda a largura disponível */
+  padding: 10px;
+  border: 2px solid #333;            /* Borda escura */
+  border-radius: 10px;               /* Bordas arredondadas */
+  background-color: #F7F0F0;         /* Cor de fundo clara */
+  box-sizing: border-box; 
+}
+
+.botoes {
+   display: flex;
+  justify-content: space-between;   /* Um botão de cada lado */
+  margin-top: 20px;
+}
+
+.btn {
+     width: 48%;                        /* Largura quase metade */
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;                  /* Mostra cursor de clique */
+  font-weight: bold;
+}
+
+.verde {
+  background-color: #8FD14F;
+}

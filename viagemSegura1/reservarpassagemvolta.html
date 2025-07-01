@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Passagem de Volta</title>
+  <link rel="stylesheet" href="reservarpassagemvolta.css">
+</head>
+<body>
+
+<div class="tela-recuperarsenha">
+
+  <div class="cabecalho">
+    <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+    <h2 class="titulo">Reservar Passagem de volta</h2>
+  </div>
+
+  <div class="seletor-datas">
+    <button>Ter. 08 Abr</button>
+    <button>Qua. 09 Abr</button>
+    <button class="ativo">Qui. 10 Abr</button>
+    <button>Sex. 11 Abr</button>
+    <button>Sáb. 12 Abr</button>
+  </div>
+
+  <p class="resultados">3 resultados</p>
+
+  <!-- Resultado com mapa -->
+  <div class="resultado">
+    <div class="info">
+      <img src="https://via.placeholder.com/50x30?text=Logo" alt="Logo Eucatur">
+      <div class="dados">
+        <p><strong>18:05</strong> - Balneário Camboriú, SC</p>
+        <p><strong>04:15</strong> - Cuiabá, MT</p>
+      </div>
+      <div class="detalhes">
+        <span>1d 10h 10m</span>
+        <span>Executivo</span>
+        <span>R$ 846,52</span>
+      </div>
+      <button class="selecionar">Selecionar</button>
+    </div>
+
+     <h2>Selecione seus assentos</h2>
+
+    <div class="mapa-poltronas">
+      <div class="fileira-esquerda">
+        <!-- Gerar poltronas 1 a 24 -->
+        <label class="assento"><input type="checkbox"><span>1</span></label>
+        <label class="assento"><input type="checkbox"><span>2</span></label>
+        <label class="assento"><input type="checkbox"><span>3</span></label>
+        <label class="assento"><input type="checkbox"><span>4</span></label>
+        <label class="assento"><input type="checkbox"><span>5</span></label>
+        <label class="assento"><input type="checkbox"><span>6</span></label>
+        <label class="assento"><input type="checkbox"><span>7</span></label>
+        <label class="assento"><input type="checkbox"><span>8</span></label>
+        <label class="assento"><input type="checkbox"><span>9</span></label>
+        <label class="assento"><input type="checkbox"><span>10</span></label>
+      </div>
+
+      <div class="fileira-direita">
+        <label class="assento"><input type="checkbox"><span>11</span></label>
+        <label class="assento"><input type="checkbox"><span>12</span></label>
+        <label class="assento"><input type="checkbox"><span>13</span></label>
+        <label class="assento"><input type="checkbox"><span>14</span></label>
+        <label class="assento"><input type="checkbox"><span>15</span></label>
+        <label class="assento"><input type="checkbox"><span>16</span></label>
+        <label class="assento"><input type="checkbox"><span>17</span></label>
+        <label class="assento"><input type="checkbox"><span>18</span></label>
+        <label class="assento"><input type="checkbox"><span>19</span></label>
+        <label class="assento"><input type="checkbox"><span>20</span></label>
+      </div>
+    </div>
+
+    <div class="legenda">
+      <div><span class="livre"></span> Livre</div>
+      <div><span class="selecionado"></span> Selecionado</div>
+      <div><span class="ocupado"></span> Ocupado</div>
+    </div>
+
+    <div class="precos">
+      <p><strong></strong></p>
+    </div>
+  </div>
+
+  <!-- Resultado 2 -->
+  <div class="resultado">
+    <div class="info">
+      <img src="https://via.placeholder.com/50x30?text=Logo" alt="Logo Eucatur">
+      <div class="dados">
+        <p><strong>18:05</strong> - Balneário Camboriú, SC</p>
+        <p><strong>04:15</strong> - Cuiabá, MT</p>
+      </div>
+      <div class="detalhes">
+        <span>1d 10h 10m</span>
+        <span>Executivo</span>
+        <span>R$ 846,52</span>
+      </div>
+      <button class="selecionar">Selecionar</button>
+    </div>
+  </div>
+
+  <!-- Resultado 3 -->
+  <div class="resultado">
+    <div class="info">
+      <img src="https://via.placeholder.com/50x30?text=Logo" alt="Logo Eucatur">
+      <div class="dados">
+        <p><strong>18:05</strong> - Balneário Camboriú, SC</p>
+        <p><strong>04:15</strong> - Cuiabá, MT</p>
+      </div>
+      <div class="detalhes">
+        <span>1d 10h 10m</span>
+        <span>Executivo</span>
+        <span>R$ 846,52</span>
+      </div>
+      <button class="selecionar">Selecionar</button>
+    </div>
+  </div>
+
+  <div class="botoes">
+    <button type="button" class="btn verde" onclick="window.location.href='pagamento.html'">CONTINUAR RESERVA</button>
+    <button type="button" class="btn verde" onclick="window.location.href='reservarpassagemida.html'">VOLTAR</button>
+  </div>
+
+</div>
+
+</body>
+</html>

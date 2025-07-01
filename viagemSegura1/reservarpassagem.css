@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;     /* Fonte padrão */
+  background-color: #FFF6D8;          /* Cor de fundo clara */
+  margin: 0;                          /* Remove margens externas padrão */
+  padding: 20px;   
+}
+
+.tela-reservarpassagem {
+  background-color: #FDF2D5;          /* Cor de fundo da caixa */
+  max-width: 400px; /* substitui width fixa */                       /* Largura fixa */
+  margin: auto;                       /* Centraliza horizontalmente */
+  padding: 20px;                      /* Espaçamento interno */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor da caixa */
+border-radius: 20px;
+}
+
+/* Cabeçalho com logo e título */
+.cabecalho {
+     display: flex;                      /* Alinha elementos lado a lado */
+  align-items: center;               /* Alinha verticalmente */
+  justify-content: center;           /* Centraliza na horizontal */
+  gap: 20px;                          /* Espaço entre logo e título */
+  margin-top: 50px;                  
+  margin-bottom: 50px;
+}
+
+.imagem {
+  width: 8%;
+    margin: 30px 0;
+    margin-right: 11%;
+    position: absolute;
+}
+
+.titulo {
+  text-decoration: underline;
+    color: black;
+    font-size: 17px;
+    margin-left: 50%;
+    font-weight: bold; 
+}
+
+/* Campos */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #F7F0F0;
+  box-sizing: border-box;
+}
+
+/* Bloco de opções */
+.opcoes {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Datas ida/volta */
+.datas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.datas div {
+  width: 45%;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 48%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.verde {
+  background-color: #8FD14F;
+}

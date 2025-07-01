@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dados Bancários</title>
+  <link rel="stylesheet" href="dadosbancarios.css">
+</head>
+<body>
+
+  <div class="dados-bancarios">
+
+    <!-- Cabeçalho com logo e título -->
+    <div class="cabecalho">
+      <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+      <p class="titulo">Dados Bancários</p> <!-- Corrigido fechamento da tag -->
+    </div>
+
+    <form>
+      <label class="label-titulo">Banco:</label>
+      <input type="text" placeholder="Nome completo da instituição financeira" name="banco">
+
+      <label class="label-titulo">Agência Bancária</label>
+      <input type="text" placeholder="Número da agência" name="agencia">
+
+      <label class="label-titulo">Número da Conta Corrente</label>
+      <input type="text" placeholder="Número completo da conta corrente" name="conta">
+
+      <label class="label-titulo">Tipo de Conta</label>
+      <div class="tipos-conta">
+        <div class="linha-check">
+          <input type="radio" id="corrente" name="tipo_conta" value="corrente">
+          <label for="corrente">Conta Corrente</label>
+        </div>
+        <div class="linha-check">
+          <input type="radio" id="poupanca" name="tipo_conta" value="poupanca">
+          <label for="poupanca">Conta Poupança</label>
+        </div>
+      </div>
+
+      <label class="label-titulo">CNPJ (caso seja diferente do CNPJ da empresa)</label>
+      <input type="text" placeholder="Digite o CNPJ" name="cnpj">
+
+      <div class="senhas">
+        <div class="campo-senha">
+          <label class="label-titulo">Crie sua senha</label>
+          <input type="password" placeholder="6 a 8 caracteres" name="senha">
+        </div>
+        <div class="campo-senha">
+          <label class="label-titulo">Repita sua senha</label>
+          <input type="password" name="confirmarsenha">
+        </div>
+      </div>
+
+      <div class="botoes">
+        <button type="button" class="btn verde" onclick="window.location.href='empresacadastradasucesso.html'">Cadastrar</button>
+        <button type="button" class="btn verde" onclick="window.location.href='informacaoempresa.html'">Voltar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

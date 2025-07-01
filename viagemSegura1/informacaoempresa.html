@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Informações sobre a Empresa</title>
+  <link rel="stylesheet" href="informacaoempresa.css">
+</head>
+<body>
+  <div class="informacaoempresa">
+
+    <div class="cabecalho">
+      <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+      <p class="titulo">Informações sobre a Empresa</p>
+    </div>
+
+    <div class="bloco-servico-frota">
+      <div class="tipo-servico">
+        <label class="titulo-interno">Tipo de Serviços:</label>
+        <div class="borda-servico">
+          <label class="linha-servico">
+            <span>Transporte intermunicipal</span>
+            <input type="checkbox">
+          </label>
+          <label class="linha-servico">
+            <span>Transporte interestadual</span>
+            <input type="checkbox">
+          </label>
+          <label class="linha-servico">
+            <span>Transporte turismo</span>
+            <input type="checkbox">
+          </label>
+        </div>
+      </div>
+
+      <div class="frota-disponivel">
+        <label class="titulo-interno">Frota Disponível:</label>
+        <div class="grupo-frota">
+          <input type="number" value="0">
+          <input type="number" value="0">
+          <input type="number" value="0">
+        </div>
+      </div>
+    </div>
+
+    <div class="licenciamento">
+      <label class="titulo-interno">Licenciamento e Permissões:</label>
+      <div class="texto-licenciamento">
+        Clique para anexar cópia dos documentos exigidos, como alvará de funcionamento, licenciamento da ANTT ou órgão responsável
+      </div>
+
+      <div class="documentos">
+        <button type="button">Documento anexado</button>
+        <button type="button">Documento anexado</button>
+        <button type="button">Documento anexado</button>
+        <button type="button">Documento anexado</button>
+      </div>
+    </div>
+
+    <div class="autorizacoes">
+      <label class="titulo-interno">Autorizações e Declarações:</label>
+
+      <div class="bloco-declaracao">
+        <p>
+          Declaro que as informações fornecidas são verdadeiras e que a empresa está regularizada para realizar o transporte rodoviário de passageiros.
+        </p>
+        <div class="linha-check">
+          <input type="checkbox">
+          <button type="button">Concordo</button>
+        </div>
+      </div>
+
+      <div class="bloco-declaracao">
+        <p>
+          Autorizo a Viagem Segura a utilizar as informações fornecidas para fins de cadastro e divulgação das passagens de minha empresa
+        </p>
+        <div class="linha-check">
+          <input type="checkbox">
+          <button type="button">Concordo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="botoes">
+      <button type="button" class="btn verde" onclick="window.location.href='dadosbancarios.html'">AVANÇAR</button>
+      <button type="button" class="btn verde" onclick="window.location.href='cadastroempresa.html'">VOLTAR</button>
+    </div>
+
+  </div>
+</body>
+</html>

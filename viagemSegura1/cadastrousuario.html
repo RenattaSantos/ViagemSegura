@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="cadastrousuario.css">
+</head>
+<body>
+
+  <div class="cadastrousuario">
+
+    <!-- Cabeçalho com imagem e título -->
+    <div class="cabecalho">
+      <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+      <h2 class="titulo">Cadastro de Usuário</h2>
+    </div>
+
+    <!-- Formulário principal -->
+    <form action="#" method="post">
+      <label for="cpf">CPF (somente números)</label>
+      <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+      <label for="confirmaemail">Confirme seu e-mail</label>
+      <input type="email" id="confirmaemail" name="confirmaemail" placeholder="Digite seu e-mail novamente">
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(DDD) xxxxx-xxxx">
+
+      <div class="row">
+        <div class="col-75">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Rua">
+        </div>
+        <div class="col-25">
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero" placeholder="Nº">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-50">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento" placeholder="Opcional">
+        </div>
+        <div class="col-50">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" placeholder="UF">
+        </div>
+        <div class="col-75">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
+        </div>
+      </div>
+
+      <label for="cep">CEP (somente números)</label>
+      <input type="text" id="cep" name="cep" placeholder="00000-000">
+
+      <div class="row">
+        <div class="col-50">
+          <label for="senha">Crie sua senha</label>
+          <input type="password" id="senha" name="senha" placeholder="6 a 8 caracteres">
+        </div>
+        <div class="col-50">
+          <label for="repetirsenha">Repita sua senha</label>
+          <input type="password" id="repetirsenha" name="repetirsenha" placeholder="Repita sua senha">
+        </div>
+      </div>
+
+      <!-- Botões de ação -->
+      <div class="botoes">
+        <button type="button" class="btn verde" onclick="window.location.href='cadastrousuariofim.html'">Cadastrar</button>
+        <button type="button" class="btn verde" onclick="window.location.href='index.html'">Voltar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

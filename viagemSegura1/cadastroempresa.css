@@ -1,0 +1,115 @@
+/* Define o estilo geral da página */
+body {
+  font-family: Arial, sans-serif;     /* Fonte padrão */
+  background-color: #FFF6D8;          /* Cor de fundo clara */
+  margin: 0;                          /* Remove margens externas padrão */
+  padding: 20px;                      /* Espaço interno nas bordas */
+  text-align: center;                    /* Centraliza textos */
+}
+
+/* Estilização da caixa principal do formulário */
+.cadastroempresa {
+  background-color: #FDF2D5;          /* Cor de fundo da caixa */
+  max-width: 400px; /* substitui width fixa */                       /* Largura fixa */
+  margin: auto;                       /* Centraliza horizontalmente */
+  padding: 20px;                      /* Espaçamento interno */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor da caixa */
+border-radius: 20px;
+}
+
+/* Estilização do cabeçalho com imagem e título */
+.cabecalho {
+  display: flex;                      /* Alinha elementos lado a lado */
+  align-items: center;               /* Alinha verticalmente */
+  justify-content: center;           /* Centraliza na horizontal */
+  gap: 20px;                          /* Espaço entre logo e título */
+  margin-top: 50px;                  
+  margin-bottom: 20px;
+}
+
+/* Estilo do título */
+.titulo {
+    text-decoration: underline;
+    color: black;
+    font-size: 17px;
+    margin-left: 50%;
+    font-weight: bold;                 /* Negrito */
+  }
+
+
+/* Estilo da imagem/logo */
+.imagem {
+    width: 8%;
+    margin: 30px 0;
+    margin-right: 15%;
+    position: absolute;
+}
+
+/* Formulário geral */
+form {
+  text-align: left;                  /* Alinha textos à esquerda */
+  margin-top: 50px;
+}
+
+/* Labels dos campos */
+label {
+  display: block;                    /* Ocupa linha inteira */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+input {
+  width: 100%;                       /* Ocupa toda a largura disponível */
+  padding: 10px;
+  border: 2px solid #333;            /* Borda escura */
+  border-radius: 10px;               /* Bordas arredondadas */
+  background-color: #F7F0F0;         /* Cor de fundo clara */
+  box-sizing: border-box;            /* Inclui borda e padding no cálculo da largura */
+}
+
+/* Agrupamento horizontal de campos */
+.row {
+  display: flex;                     /* Alinha colunas lado a lado */
+  gap: 10px;                         /* Espaço entre colunas */
+}
+
+/* Classes para definir proporções das colunas */
+.col-25 {
+  width: 25%;                        /* 25% da linha */
+}
+
+.col-50 {
+  width: 50%;                        /* 50% da linha */
+}
+
+.col-75 {
+  width: 75%;                        /* 75% da linha */
+}
+
+.col-30 {
+  width: 55%;
+}
+
+
+/* Container dos botões */
+.botoes {
+  display: flex;
+  justify-content: space-between;   /* Um botão de cada lado */
+  margin-top: 20px;
+}
+
+/* Estilo comum dos botões */
+.btn {
+  width: 48%;                        /* Largura quase metade */
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;                  /* Mostra cursor de clique */
+  font-weight: bold;
+}
+
+/* Botão com cor de fundo verde */
+.verde {
+  background-color: #8FD14F;
+}

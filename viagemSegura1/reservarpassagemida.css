@@ -1,0 +1,243 @@
+body {
+   font-family: Arial, sans-serif;     /* Fonte padrão */
+  background-color: #FFF6D8;          /* Cor de fundo clara */
+  margin: 0;                          /* Remove margens externas padrão */
+  padding: 20px;                      /* Espaço interno nas bordas */
+  
+}
+
+.tela-recuperarsenha {
+  background-color: #FDF2D5;          /* Cor de fundo da caixa */
+  max-width: 500px; /* substitui width fixa */                       /* Largura fixa */
+  margin: auto;                       /* Centraliza horizontalmente */
+  padding: 20px;                      /* Espaçamento interno */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor da caixa */
+border-radius: 20px;
+  
+}
+
+.cabecalho {
+ display: flex;                      /* Alinha elementos lado a lado */
+  align-items: center;               /* Alinha verticalmente */
+  justify-content: center;           /* Centraliza na horizontal */
+  gap: 20px;                          /* Espaço entre logo e título */
+  margin-top: 50px;                  
+  margin-bottom: 20px;
+
+}
+
+.titulo {
+  text-decoration: underline;
+    color: black;
+    font-size: 17px;
+    margin-left: 50%;
+    font-weight: bold;  
+}
+
+.imagem {
+ width: 8%;
+    margin: 30px 0;
+    margin-right: 15%;
+    position: absolute;
+    
+}
+
+
+
+.seletor-datas {
+  display: flex;
+  border: 2px solid #333;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fef9ec;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.seletor-datas button {
+  border: none;
+  background: transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.seletor-datas button:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.seletor-datas .ativo {
+  background: #d0f0c0;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.resultados {
+  margin-top: 20px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.resultado {
+  margin-top: 10px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  background: #fef9ec;
+  padding: 10px;
+  width: 480px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.dados p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.detalhes {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.selecionar {
+  background: #d0f0c0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.selecionar:hover {
+  background: #c2e6b3;
+}
+
+.mapa-poltronas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.fileira-esquerda, .fileira-direita {
+  display: flex;
+  flex-direction: row; /* AGORA EM LINHA */
+  gap: 10px;
+}
+
+.assento {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #333;
+  transition: background 0.3s;
+}
+
+.livre {
+  background: #9fdf70;
+}
+
+.selecionado {
+  background: #f7e77a;
+}
+
+.ocupado {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.legenda {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.legenda span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.legenda .livre {
+  background: #9fdf70;
+}
+
+.legenda .selecionado {
+  background: #f7e77a;
+}
+
+.legenda .ocupado {
+  background: #ccc;
+}
+
+.precos {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.botoes {
+
+  display: flex;
+  justify-content: space-between;   /* Um botão de cada lado */
+  margin-top: 20px;
+
+}
+
+.btn {
+  width: 48%;                        /* Largura quase metade */
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;                  /* Mostra cursor de clique */
+  font-weight: bold;
+}
+
+.verde {
+  background-color: #8FD14F;
+}
+
+.assento input[type="checkbox"] {
+  display: none; /* Esconde o checkbox */
+}
+
+.assento span {
+  display: inline-block;
+  width: 35px;
+  border-radius: 8px;
+  background: #9fdf70; /* livre */
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.assento input[type="checkbox"]:checked + span {
+  background: #f7e77a; /* selecionado */
+}
+
+.assento.ocupado span {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+

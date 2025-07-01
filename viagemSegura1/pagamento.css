@@ -1,0 +1,183 @@
+body {
+   font-family: Arial, sans-serif;
+  background-color: #FFF6D8;
+  margin: 0;
+  padding: 20px;
+}
+
+.tela-pagamento {
+    background-color: #FDF2D5;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.cabecalho {
+    display: flex;                      /* Alinha elementos lado a lado */
+  align-items: center;               /* Alinha verticalmente */
+  justify-content: center;           /* Centraliza na horizontal */
+  gap: 20px;                          /* Espaço entre logo e título */
+  margin-top: 50px;                  
+  margin-bottom: 20px;
+}
+
+.titulo {
+ text-decoration: underline;
+    color: black;
+    font-size: 17px;
+    margin-left: 50%;
+    font-weight: bold;               /* Negrito */
+}
+
+/* Logo/imagem do cabeçalho */
+.imagem {
+  width: 8%;
+    margin: 30px 0;
+    margin-right: 15%;
+    position: absolute;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.resumo, .dados, .contato, .pagamento {
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 15px;
+  background: #fef9ec;
+}
+
+.resumo h3, .dados h3, .contato h3, .pagamento h3 {
+  margin-bottom: 10px;
+}
+
+.viajante {
+  margin-bottom: 10px;
+}
+
+.viajante h4 {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;                    /* Ocupa linha inteira */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;                       /* Ocupa toda a largura disponível */
+  padding: 10px;
+  border: 2px solid #333;            /* Borda escura */
+  border-radius: 10px;               /* Bordas arredondadas */
+  background-color: #F7F0F0;         /* Cor de fundo clara */
+  box-sizing: border-box; 
+}
+
+.opcoes-pagamento {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.btn-pagamento {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #fef9ec;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input#pix:checked + label[for="pix"],
+input#credito:checked + label[for="credito"] {
+  background: #d0f0c0;
+}
+
+.info-pagamento .pix-info,
+.info-pagamento .credito-info {
+  display: none;
+  margin-top: 15px;
+}
+
+input#pix:checked ~ .info-pagamento .pix-info {
+  display: block;
+}
+input#credito:checked ~ .info-pagamento .credito-info {
+  display: block;
+}
+
+.parcelas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.parcelas input[type="radio"] {
+  display: none;
+}
+
+.btn-parcela {
+  padding: 8px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #fef9ec;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.btn-parcela:hover {
+  background: #e6e6e6;
+}
+
+.parcelas input[type="radio"]:checked + .btn-parcela {
+  background: #d0f0c0;
+  font-weight: bold;
+}
+
+
+
+.btn-confirmar {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #d0f0c0;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;   /* Um botão de cada lado */
+  margin-top: 20px;
+}
+
+.btn {
+   width: 48%;                        /* Largura quase metade */
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;                  /* Mostra cursor de clique */
+  font-weight: bold;
+}
+
+.verde {
+  background-color: #8FD14F;
+}

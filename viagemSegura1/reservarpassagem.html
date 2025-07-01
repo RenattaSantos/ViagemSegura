@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar Passagem</title>
+  <link rel="stylesheet" href="reservarpassagem.css">
+</head>
+<body>
+  <div class="tela-reservarpassagem">
+    <div class="cabecalho">
+      <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+      <h2 class="titulo">Reservar Passagem</h2>
+    </div>
+
+    <label for="origem">Origem</label>
+    <input type="text" id="origem" placeholder="De onde você vai sair?">
+
+    <label for="destino">Destino</label>
+    <input type="text" id="destino" placeholder="Para onde você vai?">
+
+    <div class="opcoes">
+      <label><input type="radio" name="tipo"> Somente Ida</label>
+      <label><input type="radio" name="tipo"> Ida e Volta</label>
+    </div>
+
+    <div class="datas">
+      <div>
+        <label for="ida">IDA</label>
+        <input type="date" id="ida">
+      </div>
+      <div>
+        <label for="volta">VOLTA</label>
+        <input type="date" id="volta">
+      </div>
+    </div>
+
+    <div class="botoes">
+      <button type="button" class="btn verde" onclick="window.location.href='reservarpassagemida.html'">BUSCAR</button>
+      <button type="button" class="btn verde" onclick="window.location.href='telafuncionario.html'">VOLTAR</button>
+    </div>
+  </div>
+</body>
+</html>

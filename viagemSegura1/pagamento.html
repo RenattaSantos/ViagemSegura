@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+
+<div class="tela-pagamento">
+
+  <div class="cabecalho">
+    <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+    <h2 class="titulo">Pagamento</h2>
+  </div>
+
+  <div class="container">
+
+    <div class="resumo">
+      <h3>Resumo do pedido</h3>
+      <p>02 assentos</p>
+      <p>R$ 2.840,18</p>
+      <p><strong>Total</strong> (taxas inclusas)</p>
+      <p>R$ x.xxx,xx</p>
+    </div>
+
+    <div class="dados">
+      <h3>Dados de quem vai viajar</h3>
+
+      <div class="viajante">
+        <h4>Viajante 1</h4>
+        <label>Nome completo</label>
+        <input type="text" placeholder="Digite seu nome">
+        <label>CPF (somente números)</label>
+        <input type="text" placeholder="Digite seu CPF">
+        <label>Data de nascimento</label>
+        <input type="text" placeholder="dd/mm/aaaa">
+      </div>
+
+      <div class="viajante">
+        <h4>Viajante 2</h4>
+        <label>Nome completo</label>
+        <input type="text" placeholder="Digite seu nome">
+        <label>CPF (somente números)</label>
+        <input type="text" placeholder="Digite seu CPF">
+        <label>Data de nascimento</label>
+        <input type="text" placeholder="dd/mm/aaaa">
+      </div>
+    </div>
+
+    <div class="contato">
+      <h3>Para qual e-mail devemos enviar as passagens?</h3>
+      <label>E-mail</label>
+      <input type="email" placeholder="Digite seu e-mail">
+      <label>Telefone</label>
+      <input type="text" placeholder="(DDD) xxxxx-xxxx">
+    </div>
+
+    <div class="pagamento">
+      <h3>Pagar com</h3>
+
+      <input type="radio" name="pagamento" id="pix" checked>
+      <label for="pix" class="btn-pagamento">PIX</label>
+
+      <input type="radio" name="pagamento" id="credito">
+      <label for="credito" class="btn-pagamento">CARTÃO DE CRÉDITO</label>
+
+      <div class="info-pagamento">
+        <div class="pix-info">
+          <p><strong>Pagamento instantâneo</strong></p>
+          <ul>
+            <li>Com Pix, você paga rápido, de forma segura e sem complicações</li>
+            <li>Pague a qualquer hora e lugar!</li>
+          </ul>
+        </div>
+
+        <div class="credito-info">
+          <p><strong>Pagamento com cartão de crédito</strong></p>
+          <p>Em quantas parcelas?</p>
+          <div class="parcelas">
+            <input type="radio" name="parcela" id="parcela1" checked>
+            <label for="parcela1" class="btn-parcela">1x de x.xxx,xx (sem juros)</label>
+            <input type="radio" name="parcela" id="parcela2">
+            <label for="parcela2" class="btn-parcela">2x de x.xxx,xx (sem juros)</label>
+            <input type="radio" name="parcela" id="parcela3">
+            <label for="parcela3" class="btn-parcela">3x de x.xxx,xx (sem juros)</label>
+            <input type="radio" name="parcela" id="parcela4">
+            <label for="parcela4" class="btn-parcela">4x de x.xxx,xx (sem juros)</label>
+            <input type="radio" name="parcela" id="parcela5">
+            <label for="parcela5" class="btn-parcela">5x de x.xxx,xx (sem juros)</label>
+            <input type="radio" name="parcela" id="parcela6">
+            <label for="parcela6" class="btn-parcela">6x de x.xxx,xx (sem juros)</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn-confirmar" onclick="window.location.href='pagamentoconfirmado.html'">CONFIRMAR</button>
+
+    <div class="botoes">
+      <button type="button" class="btn verde" onclick="window.location.href='reservarpassagemvolta.html'">VOLTAR</button>
+      <button type="button" class="btn verde" onclick="window.location.href='telafuncionario.html'">CANCELAR</button>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

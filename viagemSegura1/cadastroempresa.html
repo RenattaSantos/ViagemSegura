@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Início do documento HTML com idioma português brasileiro -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define o padrão de codificação de caracteres como UTF-8 -->
+
+  <title>Cadastro de Empresa</title>
+  <!-- Título da aba do navegador -->
+
+  <link rel="stylesheet" href="cadastroempresa.css">
+  <!-- Importa o arquivo CSS externo para aplicar os estilos -->
+</head>
+
+<body>
+  <!-- Início do corpo da página -->
+
+  <div class="cadastroempresa">
+    <!-- Container principal com fundo e sombra -->
+
+    <div class="cabecalho">
+      <!-- Cabeçalho com logo e título alinhados lado a lado -->
+
+      <img class="imagem" src="viagemsegura.png" alt="Logo Viagem Segura">
+      <!-- Logo da empresa -->
+
+      <p class="titulo">Cadastro de Empresa</p>
+      <!-- Título do formulário -->
+    </div>
+
+    <form>
+      <!-- Início do formulário -->
+
+      <label>CNPJ (somente números)</label>
+      <input type="text" placeholder="Digite o CNPJ da empresa">
+      <!-- Campo de texto para CNPJ -->
+
+      <label>Razão Social</label>
+      <input type="text" placeholder="Digite a razão social">
+      <!-- Campo de texto para razão social -->
+
+      <label>E-mail</label>
+      <input type="email" placeholder="Digite seu e-mail">
+      <!-- Campo de e-mail com validação -->
+
+      <label>Confirme seu e-mail</label>
+      <input type="email" placeholder="Digite novamente seu e-mail">
+      <!-- Campo de confirmação de e-mail -->
+
+      <label>Telefone</label>
+      <input type="tel" placeholder="(DDD) xxxxx-xxxx">
+      <!-- Campo para telefone com placeholder indicando formato -->
+
+      <div class="row">
+        <!-- Linha com dois campos lado a lado -->
+
+        <div class="col-75">
+          <!-- Coluna que ocupa 75% da largura da linha -->
+          <label>Endereço</label>
+          <input type="text" placeholder="Rua">
+          <!-- Campo para rua -->
+        </div>
+
+        <div class="col-25">
+          <!-- Coluna com 25% da largura -->
+          <label>Número</label>
+          <input type="text" placeholder="Nº">
+          <!-- Campo para número da casa/prédio -->
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Segunda linha com dois campos -->
+
+        <div class="col-50">
+          <!-- Coluna com 50% -->
+          <label>Complemento</label>
+          <input type="text" placeholder="Opcional">
+          <!-- Campo para complemento (opcional) -->
+        </div>
+
+        <div class="col-30">
+          <!-- Coluna com 30% -->
+          <label>Bairro</label>
+          <input type="text" placeholder="Digite o bairro">
+          <!-- Campo para bairro -->
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Terceira linha com Estado e Cidade -->
+
+        <div class="col-25">
+          <!-- Coluna pequena para estado -->
+          <label>Estado</label>
+          <input type="text" placeholder="UF">
+          <!-- Campo para UF (estado) -->
+        </div>
+
+        <div class="col-75">
+          <!-- Coluna maior para cidade -->
+          <label>Cidade</label>
+          <input type="text" placeholder="Digite a cidade">
+          <!-- Campo para cidade -->
+        </div>
+      </div>
+      
+
+      <label>CEP (somente números)</label>
+      <input type="text" placeholder="00000-000">
+      <!-- Campo para CEP -->
+
+      <div class="botoes">
+        <!-- Container para os dois botões -->
+
+        <button type="button" class="btn verde" onclick="window.location.href='informacaoempresa.html'">CADASTRAR</button>
+        <!-- Botão que redireciona para a próxima página -->
+
+        <button type="button" class="btn verde" onclick="window.location.href='telafuncionario.html'">VOLTAR</button>
+        <!-- Botão para voltar à página anterior -->
+      </div>
+    </form>
+  </div>
+</body>
+</html>
